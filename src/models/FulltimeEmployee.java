@@ -47,16 +47,16 @@ public class FulltimeEmployee extends Employee{
 
     @Override
     public double getNetSalary() {
-        double result = getNetSalary() + (getBonus() - getFineMoney());
+        double result = getBaseSalary() + (getBonus() - getFineMoney());
         return result;
     }
 
     @Override
-    public String
-    toString() {
-        return "FulltimeEmployee{" + super.toString()+
+    public String toString() {
+        return "FulltimeEmployee{" + super.toString() +
                 "bonus=" + bonus +
                 ", fineMoney=" + fineMoney +
-                '}';
+                ", baseSalary=" + baseSalary + " "
+                ;
     }
 }
